@@ -1,0 +1,95 @@
+body {
+    font-family: 'Afacad Flux', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* 90% da largura da tela */
+    max-width: 400px; /* Limita a largura máxima */
+    text-align: center;
+}
+
+.icon {
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-control:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px; /* Reduzir tamanho da fonte em telas menores */
+    }
+    .btn {
+        font-size: 14px; /* Tamanho da fonte do botão */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px; /* Menos padding em telas muito pequenas */
+    }
+    
+    h1 {
+        font-size: 18px; /* Reduzir ainda mais o tamanho da fonte */
+    }
+    
+    .form-control {
+        font-size: 12px; /* Menor tamanho de fonte nos campos */
+    }
+}
